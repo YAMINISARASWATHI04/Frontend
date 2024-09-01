@@ -1,11 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
 table {
     border: 1px groove red;
-    align: center;
+    border-collapse: collapse;
+    /* This property collapses the borders of adjacent cells into a single border */
 }
 
 td {
     height: 50px;
     width: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 36px;
+    /* Size of the chess pieces */
+    border: 1px solid black;
 }
 
 #white {
@@ -13,5 +28,5 @@ td {
 }
 
 #black {
-    background: black;
+    background: rgba(11, 3, 3, 0.577);
 }
