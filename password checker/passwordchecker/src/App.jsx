@@ -25,33 +25,33 @@ const App = () => {
 
     const results = criteria.map((criterion) => criterion.regex.test(password));
     console.log('Criteria Results:', results);
-    const n=passedCriteria.length;
-    if (n==5){
-      strength='Very strong';
-    }
-    else if (n==4){
-      strength='Strong';
-    }
-    else if (n==3){
-      strength='Medium';
-    }
-    else {
-      strength='Weak';
-    }
-    // switch (passedCriteria.length) {
-    //   case 5:
-    //     strength = 'Very Strong';
-    //     break;
-    //   case 4:
-    //     strength = 'Strong';
-    //     break;
-    //   case 3:
-    //     strength = 'Medium';
-    //     break;
-    //   default:
-    //     strength = 'Weak';
-    //     break;
+    // const n=passedCriteria.length;
+    // if (n==5){
+    //   strength='Very strong';
     // }
+    // else if (n==4){
+    //   strength='Strong';
+    // }
+    // else if (n==3){
+    //   strength='Medium';
+    // }
+    // else {
+    //   strength='Weak';
+    // }
+    switch (passedCriteria.length) {
+      case 5:
+        strength = 'Very Strong';
+        break;
+      case 4:
+        strength = 'Strong';
+        break;
+      case 3:
+        strength = 'Medium';
+        break;
+      default:
+        strength = 'Weak';
+        break;
+    }
 
     setStrength(strength);
   };
