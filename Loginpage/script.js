@@ -12,9 +12,9 @@ document
 
     // Simple validation
     if (username === "" || password === "") {
-      displayErrorMessage("Please fill in both fields.");
+      alert("Please fill in both fields.");
     } else {
-      displayErrorMessage("Login successful!", "success");
+      alert("Login successful!", "success");
 
       // Clear form data after successful login
       document.getElementById("loginForm").reset();

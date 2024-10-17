@@ -1,8 +1,8 @@
 /* style.css */
-/* style.css */
+
 body {
     /* font-family: Arial, sans-serif; */
-    background-color: #f0f0f0;
+    background-color: #f0eef3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,17 +11,17 @@ body {
 }
 
 .login-container {
-    background-color: white;
+    background-color: rgb(253, 247, 247);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* border-radius: 8px; */
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
     width: 300px;
     text-align: center;
 }
 
 h2 {
     margin-bottom: 20px;
-    color: #333;
+    color: #3f3e3e;
 }
 
 .input-group {
